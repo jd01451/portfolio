@@ -93,7 +93,6 @@ header.gnb_up {
         width: 180px;
         max-height: 0;
         overflow: hidden;
-        pointer-events: none;
         transition: 0.3s;
         opacity: 0;
         z-index: 10;
@@ -103,7 +102,6 @@ header.gnb_up {
         max-height: 1000px;
         transform: translateX(-50%) translateY(-1px);
         opacity: 1;
-        pointer-events: auto;
     }
     header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a {
         display: block;

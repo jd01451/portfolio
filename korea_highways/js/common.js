@@ -11,11 +11,10 @@ $(document).ready(function(){
     resize_chk()
     $('header .gnb .gnb_open').on('click', function(){
         $('header').addClass('menu_open')
-        // $('body').addClass('scroll_lock')
     })
     $('header .gnb .gnb_close').on('click', function(){
         $('header').removeClass('menu_open')
-        // $('body').removeClass('scroll_lock')
+        $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('open')
     })
 
     $('header .gnb .gnb_wrap ul.depth1 > li > a').on('click', function(e){
