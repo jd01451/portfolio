@@ -109,7 +109,6 @@
   align-items: center;
 }
 .introduce .box .profile .photo {
-  width: 73.81%;
   height: 234px;
   background-color: #151515;
   border: 1px solid var(--box-stroke);
@@ -123,8 +122,7 @@
   gap: 50px;
 }
 .introduce .box .info ul li {
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 .introduce .box .info ul li .tit {
   font-size: var(--tit-size);
@@ -149,12 +147,12 @@
 .project1 .box .isu {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   width: 87.30%
 }
 .project1 .box .isu .photo {
   overflow: hidden;
-  width: 417px;
-  height: 217px;
+  height: 214px;
 }
 .project1 .box .isu .photo img {
   width: 100%;
@@ -162,7 +160,7 @@
   object-fit: cover;
 }
 .project1 .box .isu .tit {
-  width: 630px;
+  width: 50%;
 }
 .project1 .box .isu .tit h2 {
   font-size: var(--tit-size);
