@@ -1,0 +1,32 @@
+header {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    border: 2px solid var(--box-stroke);
+    width: 54.48%;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1b1b1b;
+    margin-top: 30px;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 50px;
+    background-color: #1b1b1b;
+}
+header nav ul li.on {
+    filter: var(--tit-box-shadow);
+    color: #fff;
+}
+footer {
+    display: none;
+}
+footer .copyright {
+    display: inline-block;
+    height: 50px;
+    padding: 12px 50px
+}

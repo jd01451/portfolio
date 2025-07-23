@@ -1,0 +1,68 @@
+html, body {
+    font-family: 'Gohu', 'Galmuri', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    background-color: var(--main-bg);
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+#wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+.skip_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.skip_nav a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fd6500;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+    font-size: 30px;
+}
+.skip_nav a:focus {
+    top: 0;
+    height: 80px;
+}
+
+:root {
+    --header-h: 50px; /* 헤더 높이 */
+    --header-w: 1046px; /* 헤더 너비*/
+    --header-w-m: 618px; /* 헤더 마이너스 너비*/
+    --secondary-color: #C9C9C9; /* 포인트 색깔 */
+    --tit-line-height: 1.2; /* 타이틀 행간 */
+    --tit-size: 40px; /* 타이틀 폰트 크기 */
+    --introduce-size: 20px; /* 서브 타이틀 폰트 크기 */
+    --display-size: 100px; /* 디스플레이 크기 (visaul) */
+    --tit-box-shadow:
+        drop-shadow(0 0 5px rgba(255, 255, 255, 0.7))
+        drop-shadow(0 0 30px rgba(255, 255, 255, 0.3));
+    --box-stroke: #2b2b2b; /* 보더 색깔 */
+    --main-bg: #151515; /* 백그라운드 */
+}
