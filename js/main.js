@@ -11,6 +11,7 @@ $(document).ready(function(){
       thresholdDelta: 1,
       thresholdTime: 0
     },
+    touchStartPreventDefault: false,
     speed: 600,
     on: {
       slideChange: function () {
