@@ -152,7 +152,7 @@ $(document).ready(function(){
             disableOnInteraction: true,
         },
 
-        loop: false,
+        loop: true,
 
         navigation: {
             nextEl: '.news .data .ctrl_wrap .btn_next',
