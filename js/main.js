@@ -35,4 +35,19 @@ $(document).ready(function(){
     const idx = $(this).index();
     swiper.slideTo(idx);
   });
+
+  $(window).on('scroll mousemove', function(e){
+    $('.cursor').css('left', e.pageX + 'px');
+    $('.cursor').css('top', e.pageY + 'px');
+  });
+
+  $('.project1 .box').hover(function(){
+    $('.cursor').toggleClass('on');
+  });
+  $('.project2 .box').hover(function(){
+    $('.cursor').toggleClass('on');
+  });
+  $('.project3 .box').hover(function(){
+    $('.cursor').toggleClass('on');
+  });
 });
