@@ -222,7 +222,7 @@
   border: 1px solid #ccc;
   border-radius: 20px;
 }
-.news .notice h2 {
+.news .notice h3 {
   font-size: 22px;
   font-weight: var(--tit-weight);
   line-height: var(--tit-line-height);
@@ -392,7 +392,7 @@
     width: auto;
     margin-bottom: 16px;
   }
-  .news .notice h2 {
+  .news .notice h3 {
     font-size: 20px;
     margin: 20px 20px;
   }
@@ -513,7 +513,7 @@
   transform: translateX(-50%);
   bottom: 36px;
 }
-.business ul li .txt h2 {
+.business ul li .txt h3 {
   font-size: 25px;
   font-weight: var(--tit-weight);
   line-height: var(--tit-line-height);
