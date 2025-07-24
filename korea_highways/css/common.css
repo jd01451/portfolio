@@ -81,7 +81,7 @@ body.scroll_lock {
 @media screen and (max-width:1300px) {
     :root {
     --header-h: 64px; /* 모바일 헤더 높이 */
-    --header-h-m: 64px; /* 모바일 헤더 마이너스 높이 */
+    --header-h-m: -64px; /* 모바일 헤더 마이너스 높이 */
     }
 }
 @media screen and (max-width:1024px) {

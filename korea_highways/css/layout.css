@@ -42,11 +42,10 @@ header .gnb_util .menu_open {
     width: 80px;
 }
 
-header.gnb_up {
-    top: var(--header-h-m);
-}
-
 @media screen and (min-width:1301px) {
+    header.gnb_up {
+    top: var(--header-h-m);
+    }
     header .gnb .gnb_bg,
     header .gnb .gnb_util,
     header .gnb .gnb_open,
