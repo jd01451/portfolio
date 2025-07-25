@@ -97,30 +97,38 @@
 .swiper-slide.introduce {
   display: flex;
   align-items: center;
+  padding: 2vw 4vw;
 }
 .introduce .box {
   display: flex;
   justify-content: space-around;
   background-color: var(--main-bg);
   border: 1px solid var(--box-stroke);
-  height: 635px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-  padding: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5vw 7vw;
+  gap: 3vw;
+  height: auto;
+  max-height: 90dvh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .introduce .box .left {
   display: flex;
-  width: 42.46%;
-  gap: 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 40%;
+  gap: 1.5vw;
+  transition: 0.3s;
 }
 .introduce .box .left .photo {
+  width: 35vw;
+  max-width: 236px;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
-  width: 236px;
-  height: 236px;
   border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .introduce .box .left .photo img {
   width: 100%;
@@ -130,30 +138,60 @@
 .introduce .box .left .des {
   width: 100%;
   text-align: center;
+  word-break: keep-all;
 }
 .introduce .box .right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 56px;
+  gap: 3vw;
+  width: 55%;
+  transition: 0.3s;
 }
 .introduce .box .right .info-section {
   display: flex;
-  gap: 100px;
+  gap: 5vw;
 }
 .introduce .box .right .info-section:last-child {
   align-items: center;
 }
 .introduce .box .right .info-section ul {
-  width: 295px;
+  width: 20vw;
+  max-width: 295px;
 }
 .introduce .box .right .info-section h2 {
   font-size: var(--tit-size);
   filter: var(--tit-box-shadow);
   line-height: var(--tit-line-height);
   color: #fff;
-  width: 241px;
+  width: 18vw;
+  max-width: 241px;
 }
+@media screen and (max-width: 1100px) {
+  .introduce .box {
+    flex-direction: column;
+    padding: 4vw 5vw;
+    max-height: none;
+    gap: 4vw;
+  }
+  .introduce .box .left {
+    display: none;
+  }
+  .introduce .box .right {
+    width: 100%;
+  }
+  .introduce .box .right .info-section {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .introduce .box .right .info-section ul,
+  .introduce .box .right .info-section h2 {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 
 .project1 .box:hover, .project2 .box:hover, .project3 .box:hover,
 div > .sub_box .font_box:hover, div > .sub_box .color_box:hover, div > .sub_box .tool_box:hover {
@@ -167,28 +205,34 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
 .swiper-slide.project1 {
   display: flex;
   align-items: center;
+  padding: 2vw 4vw;
 }
 .project1 .box {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--main-bg);
-  height: 380px;
   border: 1px solid var(--box-stroke);
-  margin-bottom: 24px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2vw;
+  padding: 2vw 3vw;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  min-height: 380px;
 }
 .project1 .box .isu {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  width: 87.30%
+  width: 87%;
+  gap: 3vw;
 }
 .project1 .box .isu .photo {
   overflow: hidden;
-  height: 214px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  width: 35vw;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .project1 .box .isu .photo img {
   width: 100%;
@@ -197,29 +241,28 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
 }
 .project1 .box .isu .tit {
   width: 50%;
+  max-width: 600px;
 }
 .project1 .box .isu .tit h2 {
   font-size: var(--tit-size);
   filter: var(--tit-box-shadow);
   line-height: var(--tit-line-height);
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 .project1 .sub_box {
   display: flex;
-  gap: 24px;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  transition: 0.3s;
 }
-.project1 .sub_box .font_box {
-  padding: 17px 46px;
+.project1 .sub_box > div {
+  padding: 1rem 2.5rem;
   background-color: var(--main-bg);
   border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-.project1 .sub_box .color_box {
-  padding: 17px 46px;
-  background-color: var(--main-bg);
-  border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 .project1 .sub_box .color_box span {
   position: relative;
@@ -232,44 +275,73 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
   top: 1px;
   width: 16px;
   height: 16px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='15' height='15' fill='%23003780' stroke='%23C9C9C9'/%3E%3C/svg%3E%0A");
 }
-.project1 .sub_box .tool_box {
-  padding: 17px 46px;
-  background-color: var(--main-bg);
-  border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-@media screen and (max-width:1100px) {
-  
+@media screen and (max-width: 1000px) {
+  .project1 .box {
+    flex-direction: column;
+    height: auto;
+    padding: 4vw 3vw;
+  }
+  .project1 .box .isu {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project1 .box .isu .photo {
+    width: 60vw;
+    max-width: none;
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .project1 .box .isu .tit {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .project1 .sub_box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project1 .sub_box > div {
+    flex: none;
+    width: 100%;
+  }
 }
 
 .swiper-slide.project2 {
   display: flex;
   align-items: center;
+  padding: 2vw 4vw;
 }
 .project2 .box {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--main-bg);
-  height: 380px;
   border: 1px solid var(--box-stroke);
-  margin-bottom: 24px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2vw;
+  padding: 2vw 3vw;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  min-height: 380px;
 }
 .project2 .box .posco {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 87.30%
+  text-align: right;
+  width: 87%;
+  gap: 3vw;
 }
 .project2 .box .posco .photo {
   overflow: hidden;
-  height: 214px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  width: 35vw;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .project2 .box .posco .photo img {
   width: 100%;
@@ -278,31 +350,28 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
 }
 .project2 .box .posco .tit {
   width: 50%;
-  text-align: right;
+  max-width: 600px;
 }
 .project2 .box .posco .tit h2 {
   font-size: var(--tit-size);
   filter: var(--tit-box-shadow);
   line-height: var(--tit-line-height);
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 .project2 .sub_box {
   display: flex;
+  gap: 1.5vw;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 24px;
+  transition: 0.3s;
 }
-.project2 .sub_box .font_box {
-  padding: 17px 46px;
+.project2 .sub_box > div {
+  padding: 1rem 2.5rem;
   background-color: var(--main-bg);
   border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-.project2 .sub_box .color_box {
-  padding: 17px 46px;
-  background-color: var(--main-bg);
-  border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 .project2 .sub_box .color_box span {
   position: relative;
@@ -315,42 +384,73 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
   top: 1px;
   width: 16px;
   height: 16px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='15' height='15' fill='%23000000' stroke='%23C9C9C9'/%3E%3C/svg%3E%0A");
 }
-.project2 .sub_box .tool_box {
-  padding: 17px 46px;
-  background-color: var(--main-bg);
-  border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+@media screen and (max-width: 1000px) {
+  .project2 .box {
+    flex-direction: column;
+    height: auto;
+    padding: 4vw 3vw;
+  }
+  .project2 .box .posco {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project2 .box .posco .photo {
+    width: 60vw;
+    max-width: none;
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .project2 .box .posco .tit {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .project2 .sub_box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project2 .sub_box > div {
+    flex: none;
+    width: 100%;
+  }
 }
 
 .swiper-slide.project3 {
   display: flex;
   align-items: center;
+  padding: 2vw 4vw;
 }
 .project3 .box {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--main-bg);
-  height: 380px;
   border: 1px solid var(--box-stroke);
-  margin-bottom: 24px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2vw;
+  padding: 2vw 3vw;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  min-height: 380px;
 }
 .project3 .box .korea {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  width: 87.30%
+  width: 87%;
+  gap: 3vw;
 }
 .project3 .box .korea .photo {
   overflow: hidden;
-  height: 214px;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  width: 35vw;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .project3 .box .korea .photo img {
   width: 100%;
@@ -359,29 +459,28 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
 }
 .project3 .box .korea .tit {
   width: 50%;
+  max-width: 600px;
 }
 .project3 .box .korea .tit h2 {
   font-size: var(--tit-size);
   filter: var(--tit-box-shadow);
   line-height: var(--tit-line-height);
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 .project3 .sub_box {
   display: flex;
-  gap: 24px;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  transition: 0.3s;
 }
-.project3 .sub_box .font_box {
-  padding: 17px 46px;
+.project3 .sub_box > div {
+  padding: 1rem 2.5rem;
   background-color: var(--main-bg);
   border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-.project3 .sub_box .color_box {
-  padding: 17px 46px;
-  background-color: var(--main-bg);
-  border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 .project3 .sub_box .color_box span {
   position: relative;
@@ -394,15 +493,40 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
   top: 1px;
   width: 16px;
   height: 16px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='15' height='15' fill='%231365C4' stroke='%23C9C9C9'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='15' height='15' fill='%23003780' stroke='%23C9C9C9'/%3E%3C/svg%3E%0A");
 }
-.project3 .sub_box .tool_box {
-  padding: 17px 46px;
-  background-color: var(--main-bg);
-  border: 1px solid var(--box-stroke);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+@media screen and (max-width: 1000px) {
+  .project3 .box {
+    flex-direction: column;
+    height: auto;
+    padding: 4vw 3vw;
+  }
+  .project3 .box .korea {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project3 .box .korea .photo {
+    width: 60vw;
+    max-width: none;
+    height: auto;
+    aspect-ratio: auto;
+  }
+  .project3 .box .korea .tit {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .project3 .sub_box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project3 .sub_box > div {
+    flex: none;
+    width: 100%;
+  }
 }
 
 .copyright {
