@@ -203,23 +203,29 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
 }
 
 .swiper-slide.project1 {
+  height: 100dvh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 2vw 4vw;
+  padding: 0 4vw;
+  overflow: hidden;
 }
 .project1 .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--main-bg);
   border: 1px solid var(--box-stroke);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
   margin-bottom: 2vw;
   padding: 2vw 3vw;
   width: 100%;
-  max-width: 1200px;
   height: auto;
   min-height: 380px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  box-sizing: border-box;
 }
 .project1 .box .isu {
   display: flex;
@@ -312,23 +318,29 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
 }
 
 .swiper-slide.project2 {
+  height: 100dvh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 2vw 4vw;
+  padding: 0 4vw;
+  overflow: hidden;
 }
 .project2 .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--main-bg);
   border: 1px solid var(--box-stroke);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
   margin-bottom: 2vw;
   padding: 2vw 3vw;
   width: 100%;
-  max-width: 1200px;
   height: auto;
   min-height: 380px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  box-sizing: border-box;
 }
 .project2 .box .posco {
   display: flex;
@@ -421,22 +433,29 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
 }
 
 .swiper-slide.project3 {
+  height: 100dvh;
   display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 0 4vw;
+  overflow: hidden;
 }
 .project3 .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--main-bg);
   border: 1px solid var(--box-stroke);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
   margin-bottom: 2vw;
   padding: 2vw 3vw;
   width: 100%;
-  max-width: 1200px;
   height: auto;
   min-height: 380px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  box-sizing: border-box;
 }
 .project3 .box .korea {
   display: flex;
@@ -528,8 +547,9 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
   }
 }
 
-.copyright {
+
+.project3 .copyright {
   position: absolute;
-  left: 20px;
+  left: 0;
   bottom: 0;
 }
