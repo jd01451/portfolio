@@ -224,8 +224,6 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  box-sizing: border-box;
 }
 .project1 .box .isu {
   display: flex;
@@ -339,8 +337,6 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  box-sizing: border-box;
 }
 .project2 .box .posco {
   display: flex;
@@ -454,8 +450,6 @@ div > .sub_box .font_box, div > .sub_box .color_box, div > .sub_box .tool_box {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  box-sizing: border-box;
 }
 .project3 .box .korea {
   display: flex;
