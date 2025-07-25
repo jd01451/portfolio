@@ -12,6 +12,12 @@ html, body {
     width: 1260px;
     margin: 0 auto;
 }
+@media screen and (max-width:1300px){
+    .wrapper {
+        width: 100%;
+        margin: 0 20px;
+    }
+}
 #wrap {
     position: relative;
     overflow: hidden;
@@ -83,4 +89,24 @@ html, body {
         drop-shadow(0 0 30px rgba(255, 255, 255, 0.3));
     --box-stroke: #2b2b2b; /* 보더 색깔 */
     --main-bg: #151515; /* 백그라운드 */
+}
+@media screen and (max-width:1100px) {
+    :root {
+    --header-h: 40px; /* 헤더 높이 */
+    --header-w: 614px; /* 헤더 너비*/
+    --header-w-m: 488px; /* 헤더 마이너스 너비*/
+    --tit-size: 30px; /* 타이틀 폰트 크기 */
+    --introduce-size: 20px; /* 서브 타이틀 폰트 크기 */
+    --display-size: 70px; /* 디스플레이 크기 (visaul) */
+    }
+}
+@media screen and (max-width:768px) {
+    :root {
+    --header-h: 30px; /* 헤더 높이 */
+    --header-w: auto; /* 헤더 너비*/
+    --header-w-m: auto; /* 헤더 마이너스 너비*/
+    --tit-size: 20px; /* 타이틀 폰트 크기 */
+    --introduce-size: 20px; /* 서브 타이틀 폰트 크기 */
+    --display-size: 40px; /* 디스플레이 크기 (visaul) */
+    }
 }
